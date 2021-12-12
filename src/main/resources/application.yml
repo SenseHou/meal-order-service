@@ -24,4 +24,4 @@ server:
 
 payment:
   name: payment-name
-  url: placeholder
+  url: http://127.0.0.1:5000
