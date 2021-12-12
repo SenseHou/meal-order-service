@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: meal-order
+  datasource:
+    url: jdbc:mysql://localhost:3306/meal_order_db?characterEncoding=utf8&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: abc123456
+#  flyway:
+#    locations: classpath:/db/migration
+#    enabled: true
+#    outOfOrder: true
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: admin
+server:
+  port: 8080
+
+payment:
+  name: payment-name
+  url: placeholder
